@@ -21,7 +21,7 @@ impl Counter {
     }
 
     pub fn inc(&self) {
-        self.counter.fetch_add(1, Relaxed);
+        self.counter.fetch_add(1, Relaxed); // TODO this may result in lock addl on x64, may not need it
     }
 
     pub fn dec(&self) {

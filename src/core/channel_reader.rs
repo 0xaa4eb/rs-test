@@ -29,7 +29,7 @@ impl Actor for ChannelReader {
     type Context = Context<Self>;
 
     fn started(&mut self, ctx: &mut Self::Context) {
-
+        ctx.set_mailbox_capacity(8192);
     }
 }
 

@@ -1,5 +1,6 @@
 pub mod data_message;
 pub mod ack_message;
+pub mod retransmit_message;
 pub mod channel_reader;
 pub mod channel_writer;
 pub mod zmq_sender;

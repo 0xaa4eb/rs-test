@@ -48,16 +48,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "actix-test"
-version = "0.1.0"
-dependencies = [
- "actix",
- "bincode",
- "serde",
- "zmq",
-]
-
-[[package]]
 name = "actix_derive"
 version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -470,6 +460,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "355ae415ccd3a04315d3f8246e86d67689ea74d88d915576e1589a351062a13b"
 dependencies = [
  "bitflags 2.6.0",
+]
+
+[[package]]
+name = "rust-actix-zmq-demo"
+version = "0.1.0"
+dependencies = [
+ "actix",
+ "bincode",
+ "serde",
+ "zmq",
 ]
 
 [[package]]

@@ -19,7 +19,7 @@ fn setup_receiver_side(system: &SystemRunner, metric_system: &'static MetricSyst
 
     let mut channel_readers = Vec::new();
     for ch_id in 0..CHANNELS_COUNT {
-        let channel_reader = system.block_on(async { ChannelReader::new(ch_id, zmq_sender.clone()).start()});
+        let channel_reader = system.block_on(async { ChannelReader::new(ch_id, metric_system, zmq_sender.clone()).start()});
         channel_readers.push(channel_reader);
     }
 
